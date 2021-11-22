@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+img{
+    height: 400px;
+}
+h1{
+    margin-top: 35px;
+}
+h3{
+    padding: 10px;
+    padding-left: 0;
+}
+.flex-container p{
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 20px;
+}
+.flex-container h1 {
+    text-align: center;
+}
+
+.payment-flex img{
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+}
+.payment-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 27%;
+    margin-right: 27%;
+    background-color: #dadbea;
+    border-radius : 8px ;
+}
+.payment-flex p{
+    text-align: left;
+    margin:0 ;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 0;
+    
+}
+.payment-flex a{
+    margin-top: 15px;
+}
+
+.button{
+    text-decoration: none;
+    text-align: center;
+    margin-top: 20px;
+}
+.proceed{
+    margin-left: 27%;
+    margin-right: 27%;
+    padding: 15px;
+    background-color: #392BC5;
+    border: none;
+    border-radius: 5px;
+    color: #dadbea;
+    
+}
+.cancel{
+    color: hsl(224, 23%, 55%);
+    margin-top: 20px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+/* 800 or less */
+@media screen and (max-width: 800px){
+    .flex-container p{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .payment-flex{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .proceed{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+/* 550 or less */
+@media screen and (max-width: 550px){
+    .flex-container p{
+        margin-left: 17%;
+        margin-right: 17%;
+    }
+    .payment-flex{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .proceed{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+/* 400 or less */
+@media screen and (max-width: 450px){
+    h1{
+        font-size: 1.5em;
+    }  
+    h3{
+        font-size: 1em;
+    }
+    
+    .flex-container p{
+        margin-left: 17%;
+        margin-right: 17%;
+        font-size: 14px;
+    } 
+    .flex-container a{
+        font-size: 14px;
+    }
+    .payment-flex{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .proceed{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+}
